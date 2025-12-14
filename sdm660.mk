@@ -265,6 +265,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor
 
+# Launcher
+PRODUCT_PACKAGES += \
+    SDM660NexusLauncherOverlay
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.asus_sdm660
