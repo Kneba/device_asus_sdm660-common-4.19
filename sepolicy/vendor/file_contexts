@@ -46,3 +46,8 @@
 /sys/devices/virtual/wakeup(/.*)?                       u:object_r:sysfs:s0
 /sys/devices/platform/soc/c1b7000.i2c/i2c-7/7-0048/wakeup(/.*)?                       u:object_r:sysfs:s0
 /sys/devices/platform/soc/c1b7000.i2c/i2c-7/7-0047/wakeup(/.*)?                       u:object_r:sysfs:s0
+
+# Wakeup sysfs
+/sys/class/wakeup(/.*)?                 u:object_r:sysfs_wakeup:s0
+/sys/devices/.*/wakeup(/.*)?            u:object_r:sysfs_wakeup:s0
+/sys/devices/soc/soc:goodix_fingerprint/wakeup(/.*)?    u:object_r:sysfs_wakeup:s0
